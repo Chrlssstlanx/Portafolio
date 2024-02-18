@@ -1,0 +1,19 @@
+:root {
+    --color-principal: #fff;
+    --color-principal-100: #DEDCDC;
+    --color-secundario: #000;
+    --color-secundario-100: #191D23;
+    --color-principal-difuminado: rgb(255, 255, 255, .2);
+    --color-letra: rgba(255, 255, 255, .6);
+    --color-iconos: #989DAA;
+    --color-iconos-hover: #57707A;
+    --color-100: #78919C;
+}
+
+html,
+body {
+    font-family: 'Comfortaa', sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}

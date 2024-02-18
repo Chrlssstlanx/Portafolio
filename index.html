@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Web de un Desarrollador Web Fullstack" >
+    <meta name="author" content="Cristian Bautista Pérez">
+    <meta name="keywords" content="Portafolio, Portfolio, Desarrollador FrontEnd, Desarrollador Back, Desarrollador Fullstack, Desarrollador Web, Web Developer" >
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="./src/styles/main.css">    
+    <link rel="stylesheet" href="./src/styles/encabezado.css">
+    <link rel="stylesheet" href="./src/styles/principal.css">
+    <link rel="stylesheet" href="./src/styles/servicios.css">
+    <link rel="stylesheet" href="./src/styles/portafolio.css">
+    <link rel="stylesheet" href="./src/styles/contacto.css">
+    <link rel="stylesheet" href="./src/styles/pie-pagina.css">
+    <title>Desarrollador Web | Crlstlan Bautista Pérez</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header id="navBar">
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li class="navbar-links__item">
+                    <a href="#principal">Inicio</a>
+                </li>
+                <li class="navbar-links__item">
+                    <a href="#servicios">Servicios</a>
+                </li>
+                <li class="navbar-links__item">
+                    <a href="#portafolio">Portafolio</a>
+                </li>
+                <li class="navbar-links__item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+            <button id="navbar__boton-desplegador" title="abrir navegación">|||</button>
+        </nav>
+    </header>
+    <main>
+        <section class="principal" id="principal">
+            <div class="principal-contenido">
+                <h2>Crlstlan Bautista Pérez</h2>
+                <h1>Desarrollador Web <span>Fullstack</span></h1>
+                <h3>Soy un Desarrollador Web que cuenta con gran experiencia y mantiene muchas habilidades destacadas que no solo potencian el Desarrollo de Aplicaciones, también lo hacen con los nuevos requerimientos del mundo actual.</h3>
+                <div class="principal-contenido__habilidades">
+                    <div><strong>HTML</strong></div>
+                    <div><strong>CSS</strong></div>
+                    <div><strong>JAVASCRIPT</strong></div>
+                    <div><strong>REACT</strong></div>
+                    <div><strong>TAILWIND</strong></div>
+                    <div><strong>NPM</strong></div>
+                    <div><strong>GIT</strong></div>
+                </div>
+                <!-- <button>Llamada a la acción</button> -->
+            </div>
+            <div class="principal-desarrollador">
+                <!-- <img src="#" alt="Desarrollador"> -->
+            </div>
+        </section>
+        <section class="servicios" id="servicios">
+            <h2>ADQUIERE MIS SERVICIOS</h2>
+            <div class="servicios-contenedor">
+                <div class="servicios-tipo">
+                    <img src="./src/images/diseno-grafico.png" alt="Diseño Web" class="servicios-tipo__iconos">
+                    <h3>Diseño Web</h3>
+                    <p>Me especializo en el diseño intuitivo y estético, brindando soluciones visuales impactantes que destacan la identidad de cada proyecto.</p>
+                </div>
+                <div class="servicios-tipo">
+                    <img src="./src/images/computadora.png" alt="Desarrollo Frontend" class="servicios-tipo__iconos">
+                    <h3>Desarrollo Web</h3>
+                    <p>Me especializo en la creación de experiencias de usuario fluidas y atractivas que elevan la usabilidad y la interactividad de las aplicaciones web.</p>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio" id="portafolio">
+            <h2>REVISA MIS PROYECTOS</h2>
+            <div class="portafolio-contenedor">
+                <div class="portafolio-contenedor__proyecto">
+                    <div class="portafolio-contenedor__proyecto-imagen">
+                        <img src="./src/images/calculadora-MacOs.png" alt="proyecto Web">
+                        <div class="portafolio-contenedor__proyecto-popup">
+                            Popup iconos
+                        </div>
+                    </div>
+                    <h3>Calculadora MacOS</h3>
+                    <p>Calculadora Básica creada con Html, Css y JavaScript vanilla</p>
+                </div>
+                <div class="portafolio-contenedor__proyecto">
+                    <div class="portafolio-contenedor__proyecto-imagen">
+                        <img src="./src/images/calculadora-cientifica.png" alt="proyecto Web">
+                        <div class="portafolio-contenedor__proyecto-popup">
+                            Popup iconos
+                        </div>
+                    </div>
+                    <h3>Calculadora Cientifica</h3>
+                    <p>Calculadora Cientifica creada con Html, Css y JavaScript vanilla</p>
+                </div>
+                <div class="portafolio-contenedor__proyecto">
+                    <div class="portafolio-contenedor__proyecto-imagen">
+                        <img src="./src/images/MetasApp.png" alt="proyecto Web">
+                        <div class="portafolio-contenedor__proyecto-popup">
+                            Popup iconos
+                        </div>
+                    </div>
+                    <h3>Metas App</h3>
+                    <p>App de metas creada con Html, Css y React, incluye almacenamiento en el Local Storage</p>
+                </div>
+            </div>
+        </section>
+        <section class="contacto" id="contacto">
+            <h2>CHARLA CONMIGO</h2>
+            <p>Gracias por visitar mi portafolio. Estaré emocionado de conocer más sobre tus proyectos, responder a tus preguntas o simplemente charlar sobre colaboraciones potenciales. ¡No dudes en ponerte en contacto conmigo!</p>
+            <form action="" class="contacto-formulario">
+                <div class="contacto-formulario__entradas">
+                    <label for="correo" id="labelCorreo">Correo</label>
+                    <input type="email" name="correo" placeholder="Correo" required enterkeyhint="next" id="correo">
+                </div>
+                <div class="contacto-formulario__entradas">
+                    <label for="mensaje" id="labelMensaje">Mensaje</label>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required enterkeyhint="done" id="mensaje"></textarea>
+                </div>
+                <button class="contacto-formulario__boton" enterkeyhint="send">ENVIAR</button>
+            </form>
+            <div class="contacto-redes-sociales">
+                <button><a href="https://www.linkedin.com/in/cristian-bautista-958360288/" target="_blank">Linkedin</a></button>
+                <button><a href="https://github.com/ChrlstlanX" target="_blank">GitHub</a></button>
+                <button><a href="#" target="_blank">Telegram</a></button>
+                <button><a href="https://wa.me/525573237684" target="_blank">Whatsapp +52 55 7323 7684</a></button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="pie-pagina-contenido">
+            <p><small>Creado y Diseñado por Crlstlan Bautista Pérez.</small></p>
+        </div>
+        <div>
+            
+        </div>
+        <div class="pie-pagina-redes-sociales">
+
+        </div>
+    </footer>
+
+    <script src="./src/scripts/script.js"></script>
+</body>
+</html>

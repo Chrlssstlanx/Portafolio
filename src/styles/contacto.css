@@ -1,0 +1,99 @@
+.contacto {
+    padding: 5em 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.contacto h2 {
+    text-align: center;
+}
+
+.contacto p {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contacto-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    gap: 20px;
+}
+
+.contacto-formulario__entradas {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-formulario__entradas label {
+    padding: 5px 5px 0 5px;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea,
+.contacto-formulario__boton {
+    padding: 8px 5px;
+    width: 500px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid var(--color-iconos-hover);
+    resize: none;
+}
+
+#labelCorreo,
+#labelMensaje {
+    visibility: hidden;
+    color: var(--color-iconos-hover);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.contacto-formulario__boton {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: 1px solid var(--color-secundario);
+    cursor: pointer;
+}
+
+.contacto-redes-sociales {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em 0;
+    gap: 10px;
+}
+
+.contacto-redes-sociales button {
+    padding: 6px 18px;
+    background-color: var(--color-secundario-100);
+    color: var(--color-principal);
+    border: 1px solid var(--color-secundario-100);
+    cursor: pointer;
+    transition: 
+        background-color .5s ease,
+        border .5s ease
+    ;
+}
+
+.contacto-redes-sociales button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-principal);
+    border: 1px solid var(--color-secundario);
+}
+
+.contacto-redes-sociales button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (width < 600px) {
+    .contacto-formulario input,
+    .contacto-formulario textarea,
+    .contacto-formulario__boton {
+        max-width: 400px;
+    }
+}
