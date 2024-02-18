@@ -37,10 +37,6 @@ header {
     color: inherit;
 }
 
-.navbar-links__item a:hover {
-    color: var(--color-principal-100);
-}
-
 .navbar-links button {
     margin: 0 15px;
     padding: 6px 16px;

@@ -1,11 +1,10 @@
 footer {
-    /* background-color: var(--color-secundario); */
     background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(https://www.repstatic.it/content/contenthub/img/2021/02/08/150323064-e79bd69d-ab5a-4ae6-a1cc-4dc6977de9d9.jpg);
     background-position: center center;
     color: var(--color-principal);
-    display: grid;
-    grid-template-columns: 30% auto 30%;
-    align-items: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 1em 0;
 }
 

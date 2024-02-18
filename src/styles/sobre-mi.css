@@ -1,0 +1,43 @@
+.sobre-mi {
+    display: grid;
+    grid-template-columns: 40% auto;
+    align-items: center;
+    padding: 5em 2em;
+    background-color: #000;
+    color: #fff;
+}
+
+.sobre-mi__imagen {
+    overflow: hidden;
+}
+
+.sobre-mi__imagen img {
+    max-width: 90%;
+    margin: auto 0;
+}
+
+.sobre-mi__profesion {
+    color: var(--color-letra);
+}
+
+.sobre-mi__habilidades {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.sobre-mi__habilidades div {
+    background-color: var(--color-principal-100);
+    color: var(--color-secundario);
+    padding: 4px 10px;
+    font-size: .8em;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12.5px;
+    cursor: default;
+}
