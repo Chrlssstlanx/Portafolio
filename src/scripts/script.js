@@ -2,6 +2,7 @@ const labelCorreo = document.getElementById('labelCorreo');
 const labelMensaje = document.getElementById('labelMensaje');
 const correo = document.getElementById('correo');
 const mensaje = document.getElementById('mensaje');
+const btn = document.getElementById('navbar__boton-desplegador')
 
 correo.addEventListener('focus', ()=>{
     correo.placeholder='';

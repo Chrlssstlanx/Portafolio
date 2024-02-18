@@ -56,20 +56,13 @@ header {
 
 #navbar__boton-desplegador {
     display: none;
+    border: none;
+    background-color: initial;
 }
 
 @media screen and (width < 550px) {
-    .navbar {
-        justify-content: end;
-    }
-
-    .navbar-links {
-        display: none;
-    }
-
     #navbar__boton-desplegador {
         display: block;
-        padding: 6px;
         margin: 5px 10px;
         cursor: pointer;
     }

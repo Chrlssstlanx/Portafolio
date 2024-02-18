@@ -1,6 +1,6 @@
 .principal {
     background-size: cover;
-    padding: 2em;
+    padding: 5em 2em;
     display: grid;
     grid-template-columns: auto 30%;
     align-items: center;
@@ -29,6 +29,12 @@
     color: var(--color-principal);
     border: 1.5px solid var(--color-secundario);
     border-radius: 4px;
+}
+
+.principal__ilustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .principal__ilustration img {
